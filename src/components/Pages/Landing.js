@@ -14,7 +14,7 @@ export default function Landing() {
               />
             </video>
           </div>
-          <h1 className='text-7xl leading-tight tracking-tight text-center mt-10 font-extrabold font-heading z-30 text-pastelBlack bg-opacity-50 rounded-xl'>
+          <h1 className='text-8xl leading-tight tracking-tight text-center mt-10 font-extrabold font-heading z-30 text-pastelBlack bg-opacity-50 rounded-xl'>
             <br></br> Visualize.<br></br> Create.<br></br> Network.<br></br>
             <p className='block text-2xl text-center leading-tight tracking-tight mt-10 font-crimson font-light z-30 text-pastelBlack bg-opacity-50'>
               For creators, by creators.

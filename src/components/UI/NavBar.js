@@ -29,7 +29,7 @@ export default function NavBar() {
       <header className={`w-full fixed flex justify-between ${scrollY > 60 ? 'bg-black transition duration-300 ease-in-out text-ivory' : 'transition  text-pastelBlack duration-300 ease-in-out'} items-center px-4 md:px-12 h-24 z-40`}>
         <a
           href='#'
-          className='flex items-center font-front text-2xl underline tracking-tight pl-10'>
+          className='flex items-center font-front text-xl underline tracking-tight pl-10'>
           communiti
           {/* <Image
             width={200}
