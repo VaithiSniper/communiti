@@ -5,7 +5,7 @@ import sendNotification from "../../../interfaces/SendPush";
 import { useState } from "react";
 
 
-import { useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import axios from "axios";
 import Datepicker from "../UI/Datepicker";
@@ -59,7 +59,7 @@ export default function Register() {
             <label
               htmlFor='name'
               className='block mb-2 text-base font-space text-gray-900 dark:text-white'>
-              Name of the NGO
+              Your name
             </label>
             <input
               type='text'
@@ -67,7 +67,7 @@ export default function Register() {
               onChange={handleChange}
               id='location'
               className='bg-gray-50 border border-gray-300 placeholder:font-space	 text-gray-900 text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5'
-              placeholder='Trust for Animals'
+              placeholder='Chuck Norris'
               required
             />
           </div>
@@ -75,21 +75,21 @@ export default function Register() {
             <label
               htmlFor='location'
               className='block mb-2 text-base font-space text-gray-900 dark:text-white'>
-              Location of the NGO
+              Your genre
             </label>
             <input
               type='text'
               name='location'
               id='password'
               onChange={handleChange}
-              placeholder='Parc de la Cité'
+              placeholder='Comedy'
               className='bg-gray-50 border border-gray-300 placeholder:font-space text-gray-900 text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white'
               required
             />
           </div>
           <button
             onClick={handleClick}
-            className='w-full text-white !bg-amber-700 hover:!bg-amber-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-space rounded-lg text-xl px-5 py-2.5 text-center '>
+            className='w-full text-white bg-yellow-700 hover:bg-amber-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-space rounded-lg text-xl px-5 py-2.5 text-center '>
             Add
           </button>
         </form>

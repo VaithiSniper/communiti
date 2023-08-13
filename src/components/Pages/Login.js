@@ -13,7 +13,7 @@ export default function Login() {
             src='/loginsplash.png'
             width={800}
             height={50}
-            alt='trucause Logo'
+            alt='communiti Logo'
           />
         </div>
         <div className='login-group p-10 ml-10'>
