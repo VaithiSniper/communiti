@@ -20,7 +20,9 @@ module.exports = {
       green: "#198754",
       ivory: "#e8e0dd",
       pastelBlack: "#2b2929",
-      orange: "#d77769"
+      orange: "#d77769",
+      yellow: "#e1aa0e",
+      rose: "#c06052"
     },
     fontFamily: {
       heading: ["Unbounded", "monospace"],
