@@ -56,7 +56,7 @@ export default function Login(props) {
               <span className='font-bold font-space text-4xl'>Join Us</span>
             </div>
             <div>
-              <p className='container font-light font-sub text-xl text-center '>
+              <p className='container font-light font-sub text-crimson text-xl text-center '>
                 Why not make earth better{" "}
                 <span className='text-yellow-100 font-semibold'>together?</span>
               </p>

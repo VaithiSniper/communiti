@@ -18,10 +18,22 @@ body {
   color: #274E3F;
   max-width: 100vw;
 }
-video 
-{
+
+video {
   filter: brightness(1.5);
 
+}
+
+@font-face {
+  font-family: 'CrimsonPro';
+  font-weight: 400;
+  src: url('/fonts/CrimsonPro.ttf');
+}
+
+@font-face {
+  font-family: 'Univ';
+  font-weight: 100;
+  src: url('/fonts/Univers.otf');
 }
 
 a {
