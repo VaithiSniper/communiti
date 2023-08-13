@@ -16,28 +16,24 @@ module.exports = {
   networks: {
     hardhat: {},
     mumbai: {
-      url: "https://matic-mumbai.chainstacklabs.com",
-      accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
-    },
-    filecoinHyperspace: {
-      url: "https://api.hyperspace.node.glif.io/rpc/v1",
+      url: "https://gateway.tenderly.co/public/polygon-mumbai",
       accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
     },
     gnosis: {
-      url: "https://rpc.gnosischain.com",
-      accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
-    },
-    scroll: {
-      url: "https://alpha-rpc.scroll.io/l2",
-      accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
-    },
-    polygonZK: {
-      url: "https://rpc.public.zkevm-test.net",
+      url: "https://rpc.chiadochain.net",
       accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
     },
     optimism: {
       url: "https://endpoints.omniatech.io/v1/op/goerli/public",
       accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
     },
+    base: {
+      url: "https://base-goerli.public.blastapi.io/",
+      accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
+    },
+    mode: {
+      url: "https://sepolia.mode.network/",
+      accounts: [process.env.NEXT_PUBLIC_PRIVATEKEY],
+    }
   },
 };

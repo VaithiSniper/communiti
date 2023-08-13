@@ -5,9 +5,10 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
+# main network
+mainNetwork='optimism'
 # list of networks
-listOfNetworks=("filecoinHyperspace" "gnosis" "scroll" "optimism")
-# listOfNetworks=("filecoinHyperspace" "gnosis")
+listOfNetworks=("base" "mode" "mumbai" "gnosis")
 
 # remove file if it already exists
 if [ -e 'contractAddresses.txt' ]
@@ -30,7 +31,7 @@ printf "${GREEN}Creating ${NC}contractAddresses.txt\n"
 touch contractAddresses.txt
 
 # calling deploy script for each subcontract
-printf "${GREEN}Deploying ${NC}subcontracts\n"
+printf "${GREEN}Deploying ${NC}subcontracts 🚀\n"
 for i in "${listOfNetworks[@]}"; do
   printf "${i}:" >> contractAddresses.txt  
   npx hardhat run scripts/deploy.subContracts.js --network "$i" > /dev/null 2> "logs/${i}.log"
@@ -43,11 +44,11 @@ for i in "${listOfNetworks[@]}"; do
 done
 
 # calling deploy script for maincontract with these addresses
-printf "${GREEN}Deploying ${NC}maincontract\n"
-npx hardhat run scripts/deploy.NetworkMapper.js --network mumbai  2> "logs/mumbai.log"
+printf "${GREEN}Deploying ${NC}maincontract 🚀\n"
+npx hardhat run scripts/deploy.NetworkMapper.js --network "$mainNetwork" 2> "logs/$mainNetwork.log"
 if [ $? = 0 ]
 then
-  echo "Main contract on mumbai ✅"
+  echo "Main contract on optimism ✅"
 else
   echo "Main contract on mumbai ❌"
 fi
