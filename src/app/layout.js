@@ -4,6 +4,8 @@ import "./globals.css";
 import Script from "next/script";
 
 import { LocalizationProvider } from "@mui/x-date-pickers";
+import { UserProvider } from '@auth0/nextjs-auth0/client';
+
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 // <------------- rainbow kit imports ------------->
 import "@rainbow-me/rainbowkit/styles.css";
@@ -42,6 +44,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <UserProvider>
         <WagmiConfig client={wagmiClient}>
           <RainbowKitProvider
             coolMode
@@ -55,7 +58,8 @@ export default function RootLayout({ children }) {
               {children}
             </LocalizationProvider>
           </RainbowKitProvider>
-        </WagmiConfig>
+          </WagmiConfig>
+          </UserProvider>
 
         <Script src='./TW-ELEMENTS-PATH/dist/js/index.min.js'></Script>
       </body>

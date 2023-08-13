@@ -3,13 +3,31 @@
 import React from "react";
 import Image from "next/image";
 import LandingCard from "@/components/UI/LandingCard";
-axios.post(`/api/ngo/getMetadata?address=${address}`);
-export default function page() {
+
+
+import Link from "next/link";
+
+import { useUser } from "@auth0/nextjs-auth0/client";
+import { useRouter } from "next/router";
+
+
+export default function Page() {
+  const { user, error, isLoading } = useUser();
+
+  const router  = useRouter();
+
   return (
     <>
-      <div className='text-banner h-full w-full leading-tight tracking-tight text-center mt-10 font-extrabold font-space z-30 text-white bg-opacity-50 rounded-xl'>
-        Welcome , Volunteer 
+      <div className='text-banner h-full w-full leading-tight tracking-tight text-center mt-10 font-extrabold font-space z-30 text-white bg-opacity-50'>
+        Welcome , Volunteer , {user.name}
+        <button
+          type='button'
+          onClick={ () => router.push('/')}
+          className='flex items-center text-white p-4 transition ease-in duration-200 font-extralight uppercase rounded-full hover:bg-amber-600 hover:text-white border-2 border-amber-900 focus:outline-none bg-grey'>
+          <Link href='/api/auth/logout' onClick={() => router.push('/')}>Logout</Link>
+        </button>
       </div>
+
       <div className='flex flex-row justify-around items-center mb-10 mt-10'>
         <LandingCard
           title='View your activities'

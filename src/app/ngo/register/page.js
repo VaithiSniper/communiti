@@ -17,7 +17,7 @@ export default function page() {
           </div>
           <Register />
         </div>
-        <Image src="/register.png" height={500} width={500} alt="" />
+        <Image src="/register.jpg " height={500} width={500} alt="" />
       </div>
     </>
   );
