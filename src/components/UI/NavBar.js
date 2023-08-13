@@ -26,16 +26,17 @@ export default function NavBar() {
 
   return (
     <>
-      <header className={`w-full fixed flex justify-between ${scrollY > 60 ? 'bg-black transition duration-300 ease-in-out' : 'transition duration-300 ease-in-out'} items-center px-4 md:px-12 h-24 z-40`}>
+      <header className={`w-full fixed flex justify-between ${scrollY > 60 ? 'bg-black transition duration-300 ease-in-out text-ivory' : 'transition  text-pastelBlack duration-300 ease-in-out'} items-center px-4 md:px-12 h-24 z-40`}>
         <a
           href='#'
-          className='flex items-center'>
-          <Image
+          className='flex items-center font-front text-xl underline tracking-tight pl-10'>
+          communiti
+          {/* <Image
             width={200}
             height={500}
-            src='/png/logo-white-1.png'
+            src='/png/logo.png'
             alt='trucause Logo'
-          />
+          /> */}
         </a>
         <div className='flex mr-10 items-center text-slate-50 font-light text-xl '>
           <a

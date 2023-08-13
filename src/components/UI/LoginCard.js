@@ -90,10 +90,10 @@ export default function Login(props) {
         <div className='px-6 py-4 flex flex-col justify-center relative'>
           <div className='container mb-2 flex flex-col items-center py-3 gap-y-2 space-y-4'>
             <div>
-              <span className='font-bold font-space text-4xl'>Join Us</span>
+              <span className='font-bold font-heading text-4xl'>Join Us</span>
             </div>
             <div>
-              <p className='container font-light font-sub text-xl text-center '>
+              <p className='container font-light font-crimson text-xl text-center '>
                 Why not make earth better{" "}
                 <span className='text-yellow-100 font-semibold'>together?</span>
               </p>

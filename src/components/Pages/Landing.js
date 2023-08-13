@@ -1,5 +1,3 @@
-import "../../app/globals.css";
-
 export default function Landing() {
   return (
     <>
@@ -16,14 +14,14 @@ export default function Landing() {
               />
             </video>
           </div>
-          <h1 className='text-banner leading-tight tracking-tight	text-center mt-10 font-extrabold font-space z-30 text-white bg-opacity-50 rounded-xl'>
-            Volunteer now <br></br> for a good cause.<br></br>
-            <p className='block text-2xl text-center leading-tight tracking-tight mt-10 font-space font-light z-30 text-white bg-opacity-50'>
-              To save the world , one step at a time.
+          <h1 className='text-8xl leading-tight tracking-tight text-center mt-10 font-extrabold font-heading z-30 text-pastelBlack bg-opacity-50 rounded-xl'>
+            <br></br> Visualize.<br></br> Create.<br></br> Network.<br></br>
+            <p className='block text-2xl text-center leading-tight tracking-tight mt-10 font-crimson font-light z-30 text-pastelBlack bg-opacity-50'>
+              For creators, by creators.
             </p>
           </h1>
         </div>
-      </section>
+      </section >
 
     </>
   );
