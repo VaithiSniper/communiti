@@ -55,14 +55,14 @@ export default function Login(props) {
   const handleAuthProceed = () => {
 
     if (type === "volunteer") {
-    if (type === "volunteer") {
-      router.push('/volunteer')
-    }
-    else {
-    else {
-      router.push('/ngo')
-    }
+      if (type === "volunteer") {
+        router.push('/volunteer')
+      }
+      else {
+        router.push('/ngo')
+      }
 
+    }
   }
   const handleProceed = async () => {
     // verify if volunteer is on mumbai, if NGO is not on mumbai
@@ -112,7 +112,7 @@ export default function Login(props) {
                   selectedTypeStyles +
                   "bg-yellow-500"
                 }>
-                Volunteer
+                Creator
               </button>
               |
               <button
@@ -125,7 +125,7 @@ export default function Login(props) {
                 className={
                   selectedTypeStyles + (type === "ngo" ? "bg-amber-500" : null)
                 }>
-                NGO
+                Subscriber
               </button>
             </div>
             <ConnectButton
@@ -151,9 +151,6 @@ export default function Login(props) {
                 {isLoading && pendingChainId === 80001 && " (switching)"}
               </button>
             )}
-
-
-            {}
           </div>
         </div>
       </div>
