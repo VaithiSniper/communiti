@@ -8,13 +8,13 @@ import LandingCard from "@/components/UI/LandingCard";
 import Link from "next/link";
 
 import { useUser } from "@auth0/nextjs-auth0/client";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 
 export default function Page() {
   const { user, error, isLoading } = useUser();
 
-  const router  = useRouter();
+  const router = useRouter();
 
   return (
     <>
@@ -22,7 +22,7 @@ export default function Page() {
         Welcome , Volunteer , {user.name}
         <button
           type='button'
-          onClick={ () => router.push('/')}
+          onClick={() => router.push('/')}
           className='flex items-center text-white p-4 transition ease-in duration-200 font-extralight uppercase rounded-full hover:bg-amber-600 hover:text-white border-2 border-amber-900 focus:outline-none bg-grey'>
           <Link href='/api/auth/logout' onClick={() => router.push('/')}>Logout</Link>
         </button>

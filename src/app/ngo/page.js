@@ -7,7 +7,7 @@ import LandingCard from "@/components/UI/LandingCard";
 import Link from "next/link";
 
 import { useUser } from "@auth0/nextjs-auth0/client";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const getNGOMetadata = async () => {
   return await axios.post("/api/ngo/getMetadata");
